@@ -1,12 +1,12 @@
 {
   "name": "basic-ui-test",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "./src/server.js",
   "scripts": {
     "build:watch": "webpack -w -p",
-    "start:watch": "nodemon server",
+    "start:watch": "nodemon ./src/server.js",
     "build": "webpack",
-    "start": "node server.js"
+    "start": "node ./src/server.js"
   },
   "repository": {
     "type": "git",

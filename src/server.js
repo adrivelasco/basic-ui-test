@@ -16,24 +16,28 @@ const env = process.env.NODE_ENV || 'development';
 
 // PathResolve
 const pathResolve = (...args) => path.resolve(__dirname, ...args);
+const PUBLIC_DIR = pathResolve('../public');
+const MOCK_DIR = pathResolve('../mock');
 
 // Middlewares
+app.disable('x-powered-by');
+
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.disable('x-powered-by');
+
 if (env === 'development') {
   app.use(morgan('dev', { mode: 'dev' }));
 }
 
 // Routing
-app.use('/api', express.static(pathResolve('mock')));
-app.use('/static', express.static(pathResolve('public/static')));
+app.use('/api', express.static(MOCK_DIR));
+app.use('/static', express.static(pathResolve(PUBLIC_DIR, 'static')));
 
 app.get('/', (req, res, next) =>
-  res.status(200).sendFile(pathResolve('src/index.html')));
+  res.status(200).sendFile(pathResolve('index.html')));
 
 // Listener
 app.listen(port, () =>
-  console.log(`NODEJS IS RUNNING ON PORT ${port} (ENV: ${env}) `)
+  console.log(`NODEJS IS RUNNING ON PORT ${port} - ENV: ${env}.`)
 );
