@@ -9,18 +9,18 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const isProduction = process.argv.includes('--env.production');
 
 module.exports = {
-  name: 'client',
+  name: 'app',
 
   context: __dirname,
 
-  entry: ['babel-polyfill', 'src/main.js'],
+  entry: ['babel-polyfill', path.resolve(__dirname, 'src/app.js')],
 
   resolve: {
     extensions: ['.webpack.js', '.web.js', '.js', '.jsx', '.json']
   },
 
   output: {
-    path: 'public/static/js',
+    path: path.resolve(__dirname, 'public/static/js'),
     filename: '[name].min.js'
   },
 

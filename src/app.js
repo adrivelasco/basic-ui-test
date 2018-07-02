@@ -3,13 +3,13 @@
   // Import SCSS module
   require('./scss/app.scss');
 
-  // JS Code
   let self;
 
   const App = {
     
     init() {
       self = this;
+
       $(document).ready(self.ready);
     },
 
@@ -22,8 +22,6 @@
     }
 
   };
-
-  window.App = App;
 
   return App.init();
 
