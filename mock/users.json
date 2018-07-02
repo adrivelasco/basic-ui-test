@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "name": "Germán Velasco",
+    "email": "germanvelasco@gmail.com",
+    "birtdate": "27/02/1998",
+    "nacionality": "Argentina",
+    "city": "Buenos Aires",
+    "picture": ""
+  },
+  {
+    "id": 1,
+    "name": "Adrián Velasco",
+    "email": "adrianvelasco@gmail.com",
+    "birtdate": "15/06/1996",
+    "nacionality": "Argentina",
+    "city": "Buenos Aires",
+    "picture": ""
+  }
+]
