@@ -21,7 +21,12 @@ cd basic-ui-test
 npm install
 ````
 
-3. Read the `CHALLENGE.md` to start the test.
+3. Build and start on development mode
+
+````bash
+npm run build:watch // Webpack build
+npm run start:watch // Nodejs starter script
+````
 
 ---
 

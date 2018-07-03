@@ -12,6 +12,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   background: #fff;
   color: #666;
   -webkit-font-smoothing: antialiased;
@@ -34,4 +35,22 @@ body {
   .instructions article:first-child {
     padding-top: 0; }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi4vY3NzL21haW4uY3NzIiwic291cmNlcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsiLCJzb3VyY2VSb290IjoiIn0=*/
+.jquery-test {
+  position: relative; }
+  .jquery-test .jquery-test-father {
+    padding: 40px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .jquery-test .jquery-test-father > * {
+      background: #424242;
+      transition: all 0.2s ease;
+      width: 55px;
+      height: 55px;
+      opacity: 0.8; }
+      .jquery-test .jquery-test-father > *.active {
+        width: 75px;
+        height: 75px;
+        opacity: 1; }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi4vY3NzL21haW4uY3NzIiwic291cmNlcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Iiwic291cmNlUm9vdCI6IiJ9*/

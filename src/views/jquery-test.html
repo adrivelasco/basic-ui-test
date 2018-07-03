@@ -17,10 +17,10 @@
           <li>
             <a href="/">Inicio</a>
           </li>
-          <li class="uk-active">
+          <li>
             <a href="/posts">Posts</a>
           </li>
-          <li>
+          <li class="uk-active">
             <a href="/jquery-test">JQUERY TEST</a>
           </li>
         </ul>
@@ -30,8 +30,25 @@
     <!-- Content -->
     <div id="app">
       <div class="uk-container uk-container-small">
-        <h3 class="uk-text-bold">PUBLICACIONES RECIENTES</h3>
-        <hr>
+        <h3 class="uk-text-bold">EJERCICIO DE JQUERY</h3>
+        <p>
+          A continuación hay un elemento con la clase "jquery-test-father", que contiene varios hijos, el cual está oculto mediante CSS.
+        </p>
+        <p>
+          Tus tareas son: 
+        </p>
+        <ul class="uk-list">
+          <li>1) Hacerlo visible mediante jQuery realizando un "fadeIn"</li>
+          <li>2) Añadir un <a href="https://www.w3schools.com/js/js_htmldom_events.asp" target="__blank">evento</a> a los elementos hijos para que en cada click sobre ellos, se le agregue la clase css "active", pero sólo uno puede tenerlo. Por lo que en cada click, también deberás resetear a los demás elementos que haya tenido la clase "active" anteriormente.</li>
+        </ul>
+        <div class="jquery-test">
+          <div class="jquery-test-father">
+            <div class="jquery-test-father-child"></div>
+            <div class="jquery-test-father-child"></div>
+            <div class="jquery-test-father-child"></div>
+            <div class="jquery-test-father-child"></div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Content -->

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
     <link rel="stylesheet" href="/static/css/uikit.min.css" />
     <link rel="stylesheet" href="/static/css/main.css" />
   </head>
@@ -22,7 +21,7 @@
             <a href="/posts">Posts</a>
           </li>
           <li>
-            <a href="/profile">Profile</a>
+            <a href="/jquery-test">JQUERY TEST</a>
           </li>
         </ul>
       </div>
@@ -64,7 +63,19 @@
           <article>
             <h5>
               <span class="uk-text-bold">
-                1. 404 NOT FOUND!
+                1. JQUERY-TEST
+              </span>
+              - DIFICULTAD:
+              <span class="uk-text-success">BAJA</span>
+            </h5>
+            <p>
+              Mediante <a href="http://api.jquery.com" target="__blank">jQuery</a> realizar los ejercicios que están en la vista <a href="/jquery-test">jQuery-Test</a>.
+            </p>
+          </article>
+          <article>
+            <h5>
+              <span class="uk-text-bold">
+                2. 404 NOT FOUND!
               </span>
               - DIFICULTAD:
               <span class="uk-text-warning">MEDIA</span>
@@ -76,9 +87,14 @@
               está ocurriendo; y un botón con el texto "Volver a Inicio" que redireccione hacía la Home al presionar sobre él.
             </p>
             <p>
+              <u>Hint:</u> El sitio está hecho son <a href="https://getuikit.com/" target="__blank">UIKit</a>, podés utilizarlo.
+            </p>
+            <p>
               <u>Hint:</u> Ejemplo de como tiene que ser el mensaje de error.
-              <a href="http://www.shape5.com/demo/forte/images/404.jpg"
-                target="__blank">Ver imagen</a>
+              <a href="http://www.shape5.com/demo/forte/images/404.jpg" target="__blank">Ver imagen</a>
+            </p>
+            <p>
+              <u>Hint:</u> Para agregar estilos, modificar el archivo "app.scss" ubicado dentro de "basic-ui-test/src/scss".
             </p>
             <p>
               <u>Hint:</u> Editar sólo el archivo "404.html" que está dentro del directorio views.
@@ -87,32 +103,40 @@
           <article>
             <h5>
               <span class="uk-text-bold">
-                2. LISTADO DE POSTS
+                3. LISTADO DE POSTS
               </span>
               - DIFICULTAD:
               <span class="uk-text-danger">ALTA</span>
             </h5>
             <p>
-              Cuando intentamos ingresar a una url inválida (Por ej: "/inexistente") se muestra una vista indicando que hay un 404 ERROR
-              pero para los responsables de Marketing este mensaje no es para nada user-friendly. Por lo cual, crea la tarea para el
-              equipo de Front-End de: Repetir el menú de navegación de la Home; mostrar un mensaje explicándole al usuario de lo que
-              está ocurriendo; y un botón con el texto "Volver a Inicio" que redireccione hacía la Home al presionar sobre él.
+              La vista de "Posts" debe mostrar un listado de ellos mostrando: título, imagen, cuerpo del artículo e información del autor del artículo (nombre, email).
+              Para eso realizar una request a <span class="uk-text-bold">"/api/posts"</span> para obtener el listado de posts.
+              Lo mismo para <span class="uk-text-bold">"/api/users"</span> para poder tener los usuarios registrados en la plataforma.
             </p>
             <p>
-              <u>Hint:</u> Ejemplo de como tiene que ser el mensaje de error.
-              <a href="http://www.shape5.com/demo/forte/images/404.jpg" target="__blank">Ver imagen</a>
+              <u>Hint:</u> Editar sólo el archivo "basic-ui-test/src/app.js", el método "posts()".
             </p>
             <p>
-              <u>Hint:</u> Editar sólo el archivo "404.html" que está dentro del directorio views.
+              <u>Hint:</u> Para la HTTP Request podés usar AJAX mediante <a href="http://api.jquery.com/jquery.ajax/" target="__blank">jQuery</a> o la API nativa del browser,
+              <a href="https://developer.mozilla.org/es/docs/Web/API/Fetch_API" target="__blank">Fetch</a>.
+            </p>
+            <p>
+              <u>Hint:</u> Una vez que tengas la información tanto de "users" como de "posts". Deberás mediante JS (editar el archivo "app.js"), para iterar sobre el JSON e imprimir en HTML el listado.
+              Te recomiendo leer la documentación de <a href="http://api.jquery.com/category/traversing/" target="__blank">jQuery</a> para saber que métodos utilizar y cómo manipular el DOM.
+            </p>
+            <p>
+              <u>Hint:</u> En el JSON de "posts", el valor de "author" hace referencia al ID de los usuarios listados en "users". Necesitarás saber esto para mostrar la información del autor en cada artículo.
             </p>
           </article>
         </section>
       </div>
     </div>
     <!-- Content -->
+    <!-- Scripts -->
     <script type="text/javascript" src="/static/js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="/static/js/uikit.min.js"></script>
     <script type="text/javascript" src="/static/js/uikit-icons.min.js"></script>
     <script type="text/javascript" src="/static/js/main.min.js"></script>
+    <!-- Scripts -->
   </body>
 </html>

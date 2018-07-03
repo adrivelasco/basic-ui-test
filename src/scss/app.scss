@@ -14,6 +14,7 @@ body {
   font-weight: normal;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   background: #fff;
   color: #666;
   -webkit-font-smoothing: antialiased;
@@ -39,5 +40,27 @@ body {
   section:first-child,
   article:first-child {
     padding-top: 0;
+  }
+}
+
+.jquery-test {
+  position: relative;
+  .jquery-test-father {
+    padding: 40px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & > * {
+      background: #424242;
+      transition: all 0.2s ease;
+      width: 55px;
+      height: 55px;
+      opacity: 0.8;
+      &.active {
+        width: 75px;
+        height: 75px;
+        opacity: 1;
+      }
+    }
   }
 }
