@@ -18,9 +18,8 @@
     },
 
     myCustomMethod() {
-      console.log('DOCUMENT IS READY');      
+      console.log('DOCUMENT IS READY'); // Remove
     }
-
   };
 
   return App.init();

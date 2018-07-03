@@ -34,10 +34,20 @@ if (env === 'development') {
 app.use('/api', express.static(MOCK_DIR));
 app.use('/static', express.static(pathResolve(PUBLIC_DIR, 'static')));
 
-app.get('/', (req, res, next) =>
-  res.status(200).sendFile(pathResolve('index.html')));
+app.get('*', (req, res) => {
+  const view = req.originalUrl === '/'
+    ? 'index'
+    : req.originalUrl.split('/')[1];
+  res.status(200);
+  res.sendFile(pathResolve(`views/${view}.html`), (err) => {
+    if (err) {
+      res.status(404);
+      res.sendFile(pathResolve('views/404.html'));
+    }
+  });
+});
 
-// Listener
+// Server listener
 app.listen(port, () =>
   console.log(`NODEJS IS RUNNING ON PORT ${port} - ENV: ${env}.`)
 );

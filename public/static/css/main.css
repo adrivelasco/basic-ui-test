@@ -1,4 +1,37 @@
-body {
-  font-family: 'Roboto'; }
+html {
+  box-sizing: border-box; }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi4vY3NzL21haW4uY3NzIiwic291cmNlcyI6W10sIm1hcHBpbmdzIjoiOzsiLCJzb3VyY2VSb290IjoiIn0=*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  box-sizing: inherit; }
+
+body {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  background: #fff;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility; }
+
+#app {
+  padding: 40px 0;
+  position: relative; }
+
+.instructions {
+  position: relative; }
+  .instructions section {
+    position: relative;
+    padding: 20px 0; }
+  .instructions article {
+    position: relative;
+    padding: 12px 0; }
+  .instructions section:first-child,
+  .instructions article:first-child {
+    padding-top: 0; }
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi4vY3NzL21haW4uY3NzIiwic291cmNlcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsiLCJzb3VyY2VSb290IjoiIn0=*/

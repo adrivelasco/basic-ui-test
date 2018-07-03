@@ -1,3 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 body {
-  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  background: #fff;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+#app {
+  padding: 40px 0;
+  position: relative;
+}
+
+.instructions {
+  position: relative;
+  section {
+    position: relative;
+    padding: 20px 0;
+  }
+  article {
+    position: relative;
+    padding: 12px 0;
+  }
+  section:first-child,
+  article:first-child {
+    padding-top: 0;
+  }
 }

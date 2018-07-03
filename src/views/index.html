@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Basic UI CodeChallenge</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/css/uikit.min.css" />
+    <link rel="stylesheet" href="/static/css/main.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+          <li class="uk-active">
+            <a href="/">Inicio</a>
+          </li>
+          <li>
+            <a href="/posts">Posts</a>
+          </li>
+          <li>
+            <a href="/profile">Profile</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navigation -->
+    <!-- Content -->
+    <div id="app">
+      <div class="uk-container uk-container-small instructions">
+        <section>
+          <h3 class="uk-text-bold">CODE CHALLENGE</h3>
+          <p>Hola! Antes de empezar, te recomendaría dedicarle un tiempo a entender la estructura del proyecto.</p>
+          <ul class="uk-list">
+            <li>
+              <p>
+                <span class="uk-text-bold">/mock</span>: Contiene dos archivos de formato JSON con la información que posteriormente requerirás para realizar el
+                challenge.
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class="uk-text-bold">/node_modules</span>: Contiene todas las dependencias necesarias para levantar y trabajar sobre el proyecto.
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class="uk-text-bold">/public</span>: Es el output que genera <a href="https://webpack.js.org/">Webpack</a> a partir del código source.
+              </p>
+            </li>
+            <li>
+              <p>
+                <span class="uk-text-bold">/src</span>: Te enfocarás principalmente en este directorio debido a que es el punto entrada y el código base.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <hr/>
+        <section>
+          <h4 class="uk-text-bold">EJERCICIOS</h4>
+          <article>
+            <h5>
+              <span class="uk-text-bold">
+                1. 404 NOT FOUND!
+              </span>
+              - DIFICULTAD:
+              <span class="uk-text-warning">MEDIA</span>
+            </h5>
+            <p>
+              Cuando intentamos ingresar a una url inválida (Por ej: "/inexistente") se muestra una vista indicando que hay un 404 ERROR
+              pero para los responsables de Marketing este mensaje no es para nada user-friendly. Por lo cual, crea la tarea para el
+              equipo de Front-End de: Repetir el menú de navegación de la Home; mostrar un mensaje explicándole al usuario de lo que
+              está ocurriendo; y un botón con el texto "Volver a Inicio" que redireccione hacía la Home al presionar sobre él.
+            </p>
+            <p>
+              <u>Hint:</u> Ejemplo de como tiene que ser el mensaje de error.
+              <a href="http://www.shape5.com/demo/forte/images/404.jpg"
+                target="__blank">Ver imagen</a>
+            </p>
+            <p>
+              <u>Hint:</u> Editar sólo el archivo "404.html" que está dentro del directorio views.
+            </p>
+          </article>
+          <article>
+            <h5>
+              <span class="uk-text-bold">
+                2. LISTADO DE POSTS
+              </span>
+              - DIFICULTAD:
+              <span class="uk-text-danger">ALTA</span>
+            </h5>
+            <p>
+              Cuando intentamos ingresar a una url inválida (Por ej: "/inexistente") se muestra una vista indicando que hay un 404 ERROR
+              pero para los responsables de Marketing este mensaje no es para nada user-friendly. Por lo cual, crea la tarea para el
+              equipo de Front-End de: Repetir el menú de navegación de la Home; mostrar un mensaje explicándole al usuario de lo que
+              está ocurriendo; y un botón con el texto "Volver a Inicio" que redireccione hacía la Home al presionar sobre él.
+            </p>
+            <p>
+              <u>Hint:</u> Ejemplo de como tiene que ser el mensaje de error.
+              <a href="http://www.shape5.com/demo/forte/images/404.jpg" target="__blank">Ver imagen</a>
+            </p>
+            <p>
+              <u>Hint:</u> Editar sólo el archivo "404.html" que está dentro del directorio views.
+            </p>
+          </article>
+        </section>
+      </div>
+    </div>
+    <!-- Content -->
+    <script type="text/javascript" src="/static/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/uikit.min.js"></script>
+    <script type="text/javascript" src="/static/js/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="/static/js/main.min.js"></script>
+  </body>
+</html>
