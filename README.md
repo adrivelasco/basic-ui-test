@@ -24,8 +24,8 @@ npm install
 3. Build and start on development mode
 
 ````bash
-npm run build:watch // Webpack build
-npm run start:watch // Nodejs starter script
+npm run build:watch
+npm run start:watch
 ````
 
 ---
